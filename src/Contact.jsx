@@ -19,7 +19,7 @@ function Contact({ lang }) {
          name: formData.get('name'),
          message: formData.get('text')
       });
-      location.reload();
+      window.location.reload();
    };
    return (
       <div>
