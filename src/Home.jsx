@@ -20,9 +20,9 @@ function Home({ lang }) {
                dangerouslySetInnerHTML={{ __html: lang.home.welcomeMessage }}
             ></h1>
             <p style={{ marginBottom: '80px' }}>{lang.home.shortDesc}</p>
-            <a href='./cv.pdf' className='cvButton' target='_blank'>
+            {/* <a href='./cv.pdf' className='cvButton' target='_blank'>
                {lang.home.cv}
-            </a>
+            </a> */}
          </div>
          <img src='./me.png' className='rounded' alt='me' />
       </div>
