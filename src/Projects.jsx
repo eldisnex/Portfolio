@@ -32,9 +32,20 @@ function Projects() {
       console.log(showModal);
    }, [showModal]);
    return (
-      <div>
-         <div class='ag-format-container'>
-            <div class='ag-courses_box'>
+      <div style={{ maxWidth: '100%' }}>
+         <div
+            class='ag-format-container'
+            style={{ display: 'flex', justifyContent: 'center' }}
+         >
+            <div
+               class='ag-courses_box'
+               style={{
+                  display: 'flex',
+                  flexWrap: 'wrap',
+                  width: '90vw',
+                  justifyContent: 'center'
+               }}
+            >
                {STARTUPS.map((startup, index) => (
                   <CardDefault
                      key={index}

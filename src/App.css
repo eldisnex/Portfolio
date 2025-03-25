@@ -112,11 +112,9 @@ main {
 
 .rounded {
    border-radius: 50%;
-   width: 25vw;
+   width: min(150px, 25vw);
    flex: 1;
    aspect-ratio: 1/1;
-   /* width: 500px; */
-   /* height: 500px; */
    object-fit: cover;
 }
 

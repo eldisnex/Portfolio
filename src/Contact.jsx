@@ -14,12 +14,15 @@ function Contact({ lang }) {
    const sendMail = (e) => {
       e.preventDefault();
       const formData = new FormData(e.target);
-      emailjs.send('service_4ccm64p', 'template_kjo5h2r', {
-         email: formData.get('email'),
-         name: formData.get('name'),
-         message: formData.get('text')
-      });
-      window.location.reload();
+      emailjs
+         .send('service_4ccm64p', 'template_kjo5h2r', {
+            email: formData.get('email'),
+            name: formData.get('name'),
+            message: formData.get('text')
+         })
+         .then(() => {
+            window.location.reload();
+         });
    };
    return (
       <div>
