@@ -3,18 +3,24 @@ import { useEffect, useState } from 'react';
 import CardDefault from './elements/Card';
 import { Cancel02Icon } from 'hugeicons-react';
 
-const React = require('react');
+import React from 'react';
+
 function Projects() {
    const STARTUPS = [
       {
-         name: 'Bot de whatsapp Bnet',
-         date: '01.02.2024',
-         desc: '## Bot de whatsapp para manejo de transacciones.\nEl bot estaba diseñado para clientes. Los mismos se registraban y mediante una serie de mensajes podían acceder a su historial de transacciones tanto como a sus acreditadas. \n\nMás información: \n[More info +](https://checker-gate-f5e.notion.site/Chatbot-WhatsApp-documentaci-n-ab772bc256724b2d899e872518b534c7)'
+         name: 'Bot de whatsapp para manejo de saldos',
+         date: '15.09.2025',
+         desc: 'Un bot de WhatsApp diseñado para que los usuarios puedan consultar sus saldos y movimientos bancarios de manera rápida y sencilla a través de mensajes de texto. El bot se integra con la API de google sheets para proporcionar información en tiempo real sobre las cuentas de los usuarios, incluyendo saldos actuales'
       },
       {
-         name: 'Startup Xprience',
-         date: '2024 (year project)',
-         desc: '### Resumen del Proyecto.\nXprience simplifica la planificación de salidas, ofreciendo una plataforma integral para elegir actividades, reservar transporte y gestionar costos. Nuestra misión es liberar a los usuarios del estrés organizativo para maximizar su disfrute en cada experiencia.'
+         name: 'National Med',
+         date: '2025 - 2026',
+         desc: 'En proceso... No hay información disponible ⌛.'
+      },
+      {
+         name: 'Bot de whatsapp para manejo de transferencias',
+         date: '12.12.2024',
+         desc: 'En proceso... No hay información disponible ⌛.'
       },
       {
          name: 'Startup Imaginify',
@@ -22,9 +28,14 @@ function Projects() {
          desc: '## Imaginify startup.\nCreate, download, and use high-quality transparent images effortlessly. No fees, no hassle – just pure creativity at your fingertips! Try it out now and let your imagination flow 💡. [Page](https://imaginifyapp.com/) (NO LONGER AVAILABLE)'
       },
       {
-         name: 'Bot de whatsapp para manejo de transferencias',
-         date: '12.12.2024',
-         desc: 'En proceso... No hay información disponible ⌛.'
+         name: 'Startup Xprience',
+         date: '2024 (year project)',
+         desc: '### Resumen del Proyecto.\nXprience simplifica la planificación de salidas, ofreciendo una plataforma integral para elegir actividades, reservar transporte y gestionar costos. Nuestra misión es liberar a los usuarios del estrés organizativo para maximizar su disfrute en cada experiencia.'
+      },
+      {
+         name: 'Bot de whatsapp Bnet',
+         date: '01.02.2024',
+         desc: '## Bot de whatsapp para manejo de transacciones.\nEl bot estaba diseñado para clientes. Los mismos se registraban y mediante una serie de mensajes podían acceder a su historial de transacciones tanto como a sus acreditadas.'
       }
    ];
    const [showModal, setShowModal] = useState(0);

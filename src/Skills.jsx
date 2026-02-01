@@ -16,8 +16,8 @@ function Skills({ lang }) {
       >
          <h1>{lang.skills.featured}</h1>
          <div style={myStyle}>
-            <Skill name={'Python'} icon={'AiOutlinePython'} />
             <Skill name={'Node.js'} icon={'FaNodeJs'} />
+            <Skill name={'PostgreSQL'} icon={'SiPostgresql'} />
          </div>
          <h1>{lang.skills.languages}</h1>
          <div style={myStyle}>
@@ -25,6 +25,7 @@ function Skills({ lang }) {
             <Skill name={'C sharp'} icon={'TbBrandCSharp'} />
             <Skill name={'TypeScript'} icon={'Typescript01Icon'} />
             <Skill name={'JavaScript'} icon={'JavaScriptIcon'} />
+            <Skill name={'SQL'} icon={'TbSql'} />
          </div>
          <h1>{lang.skills.frontend}</h1>
          <div style={myStyle}>
@@ -38,7 +39,7 @@ function Skills({ lang }) {
             <Skill name={'Python'} icon={'AiOutlinePython'} />
             <Skill name={'Node.js'} icon={'FaNodeJs'} />
             <Skill name={'Mongo'} icon={'TbBrandMongodb'} />
-            <Skill name={'SQL'} icon={'TbSql'} />
+            <Skill name={'PostgreSQL'} icon={'SiPostgresql'} />
          </div>
          <h1>{lang.skills.others}</h1>
          <div style={myStyle}>
